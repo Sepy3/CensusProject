@@ -6,7 +6,7 @@ public class Interface {
 
     public Interface() {
         scanner = new Scanner(System.in);
-        // ساخت یک کشور پیش‌فرض
+    
         myCountry = new Country("Spain"); 
     }
 
@@ -15,8 +15,7 @@ public class Interface {
         while (running) {
             printMenu();
             int choice = scanner.nextInt();
-            scanner.nextLine(); // رفع باگ خط جدید در اسکنر
-
+            scanner.nextLine();
             switch (choice) {
                 case 1:
                     System.out.println("Data initialized.");
